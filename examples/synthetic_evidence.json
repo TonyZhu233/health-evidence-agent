@@ -1,0 +1,17 @@
+{
+  "question": "In adults with a synthetic chronic condition, does Treatment A reduce the fictional biomarker compared with usual care?",
+  "studies": [
+    {
+      "id": "S1",
+      "title": "Synthetic randomized trial of Treatment A",
+      "year": 2025,
+      "abstract": "In this fictional randomized study of 240 adults, Treatment A reduced the fictional biomarker by 8 units versus 3 units with usual care at 12 weeks. Attrition was 18%, and the study was not powered for clinical outcomes."
+    },
+    {
+      "id": "S2",
+      "title": "Synthetic observational study of Treatment A",
+      "year": 2024,
+      "abstract": "In this fictional cohort of 1,100 adults, Treatment A was associated with a 4-unit larger biomarker reduction after adjustment. Residual confounding and incomplete outcome capture were possible."
+    }
+  ]
+}
