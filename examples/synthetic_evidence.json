@@ -1,5 +1,6 @@
 {
   "question": "In adults with a synthetic chronic condition, does Treatment A reduce the fictional biomarker compared with usual care?",
+  "provenance": {"source": "synthetic", "note": "All records and results are fictional, authored for software testing."},
   "studies": [
     {
       "id": "S1",
@@ -12,6 +13,42 @@
       "title": "Synthetic observational study of Treatment A",
       "year": 2024,
       "abstract": "In this fictional cohort of 1,100 adults, Treatment A was associated with a 4-unit larger biomarker reduction after adjustment. Residual confounding and incomplete outcome capture were possible."
+    },
+    {
+      "id": "S3",
+      "title": "Synthetic null trial of Treatment A on the biomarker",
+      "year": 2025,
+      "abstract": "In this fictional randomized trial of 90 adults, Treatment A showed no biomarker difference versus usual care at 6 weeks. The confidence interval was wide and the follow-up shorter than in the other trial."
+    },
+    {
+      "id": "S4",
+      "title": "Synthetic inhaler trial for asthma symptoms",
+      "year": 2024,
+      "abstract": "In a fictional asthma trial, inhaler B improved symptom scores over 8 weeks. Hospital admissions were not measured."
+    },
+    {
+      "id": "S5",
+      "title": "Synthetic blood pressure study of exercise",
+      "year": 2023,
+      "abstract": "In a fictional exercise cohort, weekly walking was associated with lower blood pressure. Participants selected their own exercise, and confounding by baseline fitness was possible."
+    },
+    {
+      "id": "S6",
+      "title": "Synthetic diabetes screening evaluation",
+      "year": 2025,
+      "abstract": "In this fictional diabetes screening evaluation, test C had sensitivity of 80% and specificity of 70%. The sample was selected from one clinic and external validation was unavailable."
+    },
+    {
+      "id": "S7",
+      "title": "Synthetic renal function monitoring",
+      "year": 2022,
+      "abstract": "In this fictional renal monitoring study, creatinine measurements varied across laboratories. No intervention or patient survival endpoint was studied."
+    },
+    {
+      "id": "S8",
+      "title": "Synthetic sleep intervention pilot",
+      "year": 2024,
+      "abstract": "In this fictional sleep pilot, participants reported longer sleep after relaxation training. The study lacked a control group and used self-reported duration."
     }
   ]
 }
