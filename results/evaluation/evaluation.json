@@ -1,0 +1,510 @@
+{
+  "mode": "extractive",
+  "created_at_utc": "2026-10-11T18:19:50.458957+00:00",
+  "corpus_sha256": "070cf14a4e4169fccbbd7353ecfdcdb3b794c7e0ec297ed2425c2cc0ce70ce82",
+  "cases_sha256": "6d70e73ec66d800d8d3618f199e0a9d833c6863b0a73d7e302195183a1e81553",
+  "scope": "Small, authored synthetic regression cases, not independent or clinical validation.",
+  "summary": {
+    "retrieval_cases": 8,
+    "answerable_retrieval_cases": 7,
+    "mean_recall_at_3": 0.8571428571428571,
+    "mrr_at_3": 0.8571428571428571,
+    "mean_ndcg_at_3": 0.8571428571428571,
+    "status_matches": 7,
+    "invalid_reports_rejected": 20,
+    "invalid_report_cases": 20,
+    "semantic_accuracy": null,
+    "clinical_accuracy": null
+  },
+  "retrieval_cases": [
+    {
+      "id": "R1",
+      "question": "Treatment A biomarker reduction trials",
+      "relevant_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "retrieved_ids": [
+        "S2",
+        "S3",
+        "S1"
+      ],
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_3": 1.0,
+      "status": "answered",
+      "expected_status": "answered",
+      "status_match": true,
+      "report": {
+        "status": "answered",
+        "reason": "",
+        "claims": [
+          {
+            "text": "In this fictional cohort of 1,100 adults, Treatment A was associated with a 4-unit larger biomarker reduction after adjustment.",
+            "evidence": [
+              {
+                "id": "S2",
+                "quote": "In this fictional cohort of 1,100 adults, Treatment A was associated with a 4-unit larger biomarker reduction after adjustment."
+              }
+            ]
+          },
+          {
+            "text": "In this fictional randomized trial of 90 adults, Treatment A showed no biomarker difference versus usual care at 6 weeks.",
+            "evidence": [
+              {
+                "id": "S3",
+                "quote": "In this fictional randomized trial of 90 adults, Treatment A showed no biomarker difference versus usual care at 6 weeks."
+              }
+            ]
+          },
+          {
+            "text": "In this fictional randomized study of 240 adults, Treatment A reduced the fictional biomarker by 8 units versus 3 units with usual care at 12 weeks.",
+            "evidence": [
+              {
+                "id": "S1",
+                "quote": "In this fictional randomized study of 240 adults, Treatment A reduced the fictional biomarker by 8 units versus 3 units with usual care at 12 weeks."
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "Extractive baseline: verbatim source excerpts, not a clinical synthesis.",
+          "Lexical relevance and valid quotes do not establish study quality or semantic entailment."
+        ]
+      },
+      "telemetry": {
+        "mode": "extractive",
+        "model_called": false,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "estimated_uncached_cost_usd": 0,
+        "semantic_review": "verbatim_excerpts_only",
+        "pipeline_seconds": 0.0009
+      },
+      "semantic_support": "NOT_SCORED"
+    },
+    {
+      "id": "R2",
+      "question": "asthma inhaler symptoms",
+      "relevant_ids": [
+        "S4"
+      ],
+      "retrieved_ids": [
+        "S4"
+      ],
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_3": 1.0,
+      "status": "answered",
+      "expected_status": "answered",
+      "status_match": true,
+      "report": {
+        "status": "answered",
+        "reason": "",
+        "claims": [
+          {
+            "text": "In a fictional asthma trial, inhaler B improved symptom scores over 8 weeks.",
+            "evidence": [
+              {
+                "id": "S4",
+                "quote": "In a fictional asthma trial, inhaler B improved symptom scores over 8 weeks."
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "Extractive baseline: verbatim source excerpts, not a clinical synthesis.",
+          "Lexical relevance and valid quotes do not establish study quality or semantic entailment."
+        ]
+      },
+      "telemetry": {
+        "mode": "extractive",
+        "model_called": false,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "estimated_uncached_cost_usd": 0,
+        "semantic_review": "verbatim_excerpts_only",
+        "pipeline_seconds": 0.0003
+      },
+      "semantic_support": "NOT_SCORED"
+    },
+    {
+      "id": "R3",
+      "question": "exercise walking blood pressure",
+      "relevant_ids": [
+        "S5"
+      ],
+      "retrieved_ids": [
+        "S5"
+      ],
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_3": 1.0,
+      "status": "answered",
+      "expected_status": "answered",
+      "status_match": true,
+      "report": {
+        "status": "answered",
+        "reason": "",
+        "claims": [
+          {
+            "text": "In a fictional exercise cohort, weekly walking was associated with lower blood pressure.",
+            "evidence": [
+              {
+                "id": "S5",
+                "quote": "In a fictional exercise cohort, weekly walking was associated with lower blood pressure."
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "Extractive baseline: verbatim source excerpts, not a clinical synthesis.",
+          "Lexical relevance and valid quotes do not establish study quality or semantic entailment."
+        ]
+      },
+      "telemetry": {
+        "mode": "extractive",
+        "model_called": false,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "estimated_uncached_cost_usd": 0,
+        "semantic_review": "verbatim_excerpts_only",
+        "pipeline_seconds": 0.0003
+      },
+      "semantic_support": "NOT_SCORED"
+    },
+    {
+      "id": "R4",
+      "question": "diabetes screening sensitivity specificity",
+      "relevant_ids": [
+        "S6"
+      ],
+      "retrieved_ids": [
+        "S6"
+      ],
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_3": 1.0,
+      "status": "answered",
+      "expected_status": "answered",
+      "status_match": true,
+      "report": {
+        "status": "answered",
+        "reason": "",
+        "claims": [
+          {
+            "text": "In this fictional diabetes screening evaluation, test C had sensitivity of 80% and specificity of 70%.",
+            "evidence": [
+              {
+                "id": "S6",
+                "quote": "In this fictional diabetes screening evaluation, test C had sensitivity of 80% and specificity of 70%."
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "Extractive baseline: verbatim source excerpts, not a clinical synthesis.",
+          "Lexical relevance and valid quotes do not establish study quality or semantic entailment."
+        ]
+      },
+      "telemetry": {
+        "mode": "extractive",
+        "model_called": false,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "estimated_uncached_cost_usd": 0,
+        "semantic_review": "verbatim_excerpts_only",
+        "pipeline_seconds": 0.0003
+      },
+      "semantic_support": "NOT_SCORED"
+    },
+    {
+      "id": "R5",
+      "question": "renal creatinine laboratories",
+      "relevant_ids": [
+        "S7"
+      ],
+      "retrieved_ids": [
+        "S7"
+      ],
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_3": 1.0,
+      "status": "answered",
+      "expected_status": "answered",
+      "status_match": true,
+      "report": {
+        "status": "answered",
+        "reason": "",
+        "claims": [
+          {
+            "text": "In this fictional renal monitoring study, creatinine measurements varied across laboratories.",
+            "evidence": [
+              {
+                "id": "S7",
+                "quote": "In this fictional renal monitoring study, creatinine measurements varied across laboratories."
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "Extractive baseline: verbatim source excerpts, not a clinical synthesis.",
+          "Lexical relevance and valid quotes do not establish study quality or semantic entailment."
+        ]
+      },
+      "telemetry": {
+        "mode": "extractive",
+        "model_called": false,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "estimated_uncached_cost_usd": 0,
+        "semantic_review": "verbatim_excerpts_only",
+        "pipeline_seconds": 0.0003
+      },
+      "semantic_support": "NOT_SCORED"
+    },
+    {
+      "id": "R6",
+      "question": "sleep relaxation duration",
+      "relevant_ids": [
+        "S8"
+      ],
+      "retrieved_ids": [
+        "S8"
+      ],
+      "recall_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_3": 1.0,
+      "status": "answered",
+      "expected_status": "answered",
+      "status_match": true,
+      "report": {
+        "status": "answered",
+        "reason": "",
+        "claims": [
+          {
+            "text": "In this fictional sleep pilot, participants reported longer sleep after relaxation training.",
+            "evidence": [
+              {
+                "id": "S8",
+                "quote": "In this fictional sleep pilot, participants reported longer sleep after relaxation training."
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "Extractive baseline: verbatim source excerpts, not a clinical synthesis.",
+          "Lexical relevance and valid quotes do not establish study quality or semantic entailment."
+        ]
+      },
+      "telemetry": {
+        "mode": "extractive",
+        "model_called": false,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "estimated_uncached_cost_usd": 0,
+        "semantic_review": "verbatim_excerpts_only",
+        "pipeline_seconds": 0.0003
+      },
+      "semantic_support": "NOT_SCORED"
+    },
+    {
+      "id": "R7",
+      "question": "pregnancy neonatal mortality",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_3": null,
+      "reciprocal_rank": null,
+      "ndcg_at_3": null,
+      "status": "insufficient_evidence",
+      "expected_status": "insufficient_evidence",
+      "status_match": true,
+      "report": {
+        "status": "insufficient_evidence",
+        "reason": "No documents had positive lexical relevance; no model call was made.",
+        "claims": [],
+        "limitations": [
+          "No clinical advice; absence in the retrieved set is not absence of evidence."
+        ]
+      },
+      "telemetry": {
+        "mode": "extractive",
+        "model_called": false,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "estimated_uncached_cost_usd": 0,
+        "semantic_review": "not_automated",
+        "pipeline_seconds": 0.0002
+      },
+      "semantic_support": "NOT_SCORED"
+    },
+    {
+      "id": "R8",
+      "question": "insomnia behavioral therapy",
+      "relevant_ids": [
+        "S8"
+      ],
+      "retrieved_ids": [],
+      "recall_at_3": 0.0,
+      "reciprocal_rank": 0,
+      "ndcg_at_3": 0.0,
+      "status": "insufficient_evidence",
+      "expected_status": "answered",
+      "status_match": false,
+      "report": {
+        "status": "insufficient_evidence",
+        "reason": "No documents had positive lexical relevance; no model call was made.",
+        "claims": [],
+        "limitations": [
+          "No clinical advice; absence in the retrieved set is not absence of evidence."
+        ]
+      },
+      "telemetry": {
+        "mode": "extractive",
+        "model_called": false,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "estimated_uncached_cost_usd": 0,
+        "semantic_review": "not_automated",
+        "pipeline_seconds": 0.0002
+      },
+      "semantic_support": "NOT_SCORED"
+    }
+  ],
+  "contract_cases": [
+    {
+      "case": "invented_id",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "invented_quote",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "short_quote",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "wrong_source",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "empty_claims",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "empty_claim_text",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "nontext_claim",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "missing_claim_text",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "no_references",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "nontext_id",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "nontext_quote",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "extra_claim_field",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "extra_top_field",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "missing_limitations",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "empty_limitations",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "nontext_limitation",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "unknown_status",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "abstain_with_claim",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "answered_with_reason",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "duplicate_quote",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "valid_quote",
+      "expected": "accept",
+      "observed": "accept",
+      "passed": true
+    },
+    {
+      "case": "false_claim_real_quote",
+      "expected": "accept_known_blind_spot",
+      "observed": "accept",
+      "passed": null,
+      "note": "Quote-location checks do NOT entail this false claim. Human semantic review is required."
+    }
+  ]
+}

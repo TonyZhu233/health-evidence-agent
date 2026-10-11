@@ -1,0 +1,10 @@
+[
+  {"id":"R1","question":"Treatment A biomarker reduction trials","relevant_ids":["S1","S2","S3"],"expected_status":"answered"},
+  {"id":"R2","question":"asthma inhaler symptoms","relevant_ids":["S4"],"expected_status":"answered"},
+  {"id":"R3","question":"exercise walking blood pressure","relevant_ids":["S5"],"expected_status":"answered"},
+  {"id":"R4","question":"diabetes screening sensitivity specificity","relevant_ids":["S6"],"expected_status":"answered"},
+  {"id":"R5","question":"renal creatinine laboratories","relevant_ids":["S7"],"expected_status":"answered"},
+  {"id":"R6","question":"sleep relaxation duration","relevant_ids":["S8"],"expected_status":"answered"},
+  {"id":"R7","question":"pregnancy neonatal mortality","relevant_ids":[],"expected_status":"insufficient_evidence"},
+  {"id":"R8","question":"insomnia behavioral therapy","relevant_ids":["S8"],"expected_status":"answered"}
+]

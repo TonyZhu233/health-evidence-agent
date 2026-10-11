@@ -1,0 +1,90 @@
+{
+  "question": "In adults with a synthetic chronic condition, does Treatment A reduce the fictional biomarker compared with usual care?",
+  "report": {
+    "status": "answered",
+    "reason": "",
+    "claims": [
+      {
+        "text": "In this fictional randomized trial of 90 adults, Treatment A showed no biomarker difference versus usual care at 6 weeks.",
+        "evidence": [
+          {
+            "id": "S3",
+            "quote": "In this fictional randomized trial of 90 adults, Treatment A showed no biomarker difference versus usual care at 6 weeks."
+          }
+        ]
+      },
+      {
+        "text": "In this fictional randomized study of 240 adults, Treatment A reduced the fictional biomarker by 8 units versus 3 units with usual care at 12 weeks.",
+        "evidence": [
+          {
+            "id": "S1",
+            "quote": "In this fictional randomized study of 240 adults, Treatment A reduced the fictional biomarker by 8 units versus 3 units with usual care at 12 weeks."
+          }
+        ]
+      },
+      {
+        "text": "In this fictional cohort of 1,100 adults, Treatment A was associated with a 4-unit larger biomarker reduction after adjustment.",
+        "evidence": [
+          {
+            "id": "S2",
+            "quote": "In this fictional cohort of 1,100 adults, Treatment A was associated with a 4-unit larger biomarker reduction after adjustment."
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "Extractive baseline: verbatim source excerpts, not a clinical synthesis.",
+      "Lexical relevance and valid quotes do not establish study quality or semantic entailment."
+    ]
+  },
+  "sources": [
+    {
+      "id": "S3",
+      "title": "Synthetic null trial of Treatment A on the biomarker",
+      "year": 2025,
+      "abstract": "In this fictional randomized trial of 90 adults, Treatment A showed no biomarker difference versus usual care at 6 weeks. The confidence interval was wide and the follow-up shorter than in the other trial."
+    },
+    {
+      "id": "S1",
+      "title": "Synthetic randomized trial of Treatment A",
+      "year": 2025,
+      "abstract": "In this fictional randomized study of 240 adults, Treatment A reduced the fictional biomarker by 8 units versus 3 units with usual care at 12 weeks. Attrition was 18%, and the study was not powered for clinical outcomes."
+    },
+    {
+      "id": "S2",
+      "title": "Synthetic observational study of Treatment A",
+      "year": 2024,
+      "abstract": "In this fictional cohort of 1,100 adults, Treatment A was associated with a 4-unit larger biomarker reduction after adjustment. Residual confounding and incomplete outcome capture were possible."
+    }
+  ],
+  "retrieval": [
+    {
+      "id": "S3",
+      "bm25_score": 1.29871226
+    },
+    {
+      "id": "S1",
+      "bm25_score": 0.95819368
+    },
+    {
+      "id": "S2",
+      "bm25_score": 0.95819368
+    }
+  ],
+  "telemetry": {
+    "mode": "extractive",
+    "model_called": false,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_uncached_cost_usd": 0,
+    "semantic_review": "verbatim_excerpts_only",
+    "pipeline_seconds": 0.0009
+  },
+  "input_sha256": "070cf14a4e4169fccbbd7353ecfdcdb3b794c7e0ec297ed2425c2cc0ce70ce82",
+  "schema_version": "2.0",
+  "review_required": true,
+  "data_provenance": {
+    "source": "synthetic",
+    "note": "All records and results are fictional, authored for software testing."
+  }
+}
