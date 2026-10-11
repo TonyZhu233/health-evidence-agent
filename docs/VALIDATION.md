@@ -3,7 +3,7 @@
 ## Local offline checks
 
 - Python 3.13.9, Windows; fresh isolated `.venv`, standard library only.
-- 46 unittest methods passed in the final local verification. CI also verifies the committed version; consult its actual run status, not only its configuration.
+- 47 unittest methods passed in the final local verification. CI also verifies the committed version; consult its actual run status, not only its configuration.
 - Offline demo and 8-case evaluation ran successfully; generated packet checksums and quote locations were independently checked with `verify_artifacts.py`.
 - Invalid reports: 20/20 rejected; mean retrieval Recall@3/MRR@3/nDCG@3: 0.857 on seven answerable synthetic questions; status match: 7/8.
 - Known synonym retrieval miss and genuine-quote/false-claim semantic blind spot retained and documented.

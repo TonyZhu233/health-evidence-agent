@@ -77,6 +77,12 @@ class EvidenceTests(unittest.TestCase):
         for claim in run(self.data)["report"]["claims"]:
             self.assertEqual(claim["text"], claim["evidence"][0]["quote"])
 
+    def test_maximum_top_k_respects_claim_cap(self):
+        studies = [{**self.data["studies"][0], "id": f"X{i}"} for i in range(20)]
+        bundle = run({"question": "biomarker", "studies": studies}, k=20)
+        self.assertEqual(len(bundle["sources"]), 20)
+        self.assertEqual(len(bundle["report"]["claims"]), 12)
+
     def test_invalid_mode(self):
         with self.assertRaises(ValueError):
             run(self.data, "magic")

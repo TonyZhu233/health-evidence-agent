@@ -10,7 +10,7 @@ Local retrieval uses BM25 (`k1=1.5`, `b=0.75`) on title + abstract. Tokenization
 
 ## Generation and validation
 
-The offline baseline selects one overlapping sentence per retrieved document and copies it verbatim as both claim and quote. It may display conflicting source excerpts without reconciling them. It is useful for testing wiring, provenance and UI, not answering a clinical question.
+The offline baseline selects one overlapping sentence per retrieved document (at most 12 claims) and copies it verbatim as both claim and quote. It may display conflicting source excerpts without reconciling them. It is useful for testing wiring, provenance and UI, not answering a clinical question.
 
 The paid adapter sends only question, IDs, titles and abstracts. Other metadata is not sent. Structured Outputs uses `text.format` with closed, required objects; status is `answered` or `insufficient_evidence`. `store=false`, no tools, no automatic retry, 2,000 output-token cap. The generation instructions ask for at most six claims, preservation of conflicts and study limitations, abstention for unsupported/personalized questions and no following embedded abstract instructions. These are **instructions**, not a security proof.
 

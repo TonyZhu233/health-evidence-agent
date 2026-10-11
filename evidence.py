@@ -137,6 +137,8 @@ def extractive_report(question: str, studies: list[dict[str, Any]]) -> dict[str,
     """No model: select one overlapping source sentence per retrieved abstract."""
     claims = []
     for study in studies:
+        if len(claims) == 12:
+            break
         sentences = re.split(r"(?<=[.!?])\s+", study["abstract"])
         choices = [(len(set(tokens(question)) & set(tokens(s))), s) for s in sentences if 20 <= len(s) <= 2000]
         if choices:
